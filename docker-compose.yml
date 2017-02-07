@@ -16,6 +16,7 @@ services:
     volumes:
       - ./logstash/config:/etc/logstash/conf.d
     ports:
+      - "12201:12201"
       - "5000:5000"
     networks:
       - docker_elk
